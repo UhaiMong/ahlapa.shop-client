@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <header className='flex gap-3 mx-auto justify-between items-center'>
+            <header className='flex gap-3 mx-auto justify-between items-center bg-info p-3'>
                 <div className="logo col-span-2">
                     <h1>Ahlapa.shop</h1>
                 </div>
                 <div className="search col-span-6">
-                    <input type="text" />
+                    <input type="text" placeholder='Search products'/>
                 </div>
                 <div className="action flex col-span-4 gap-3">
                     <div>
@@ -52,7 +52,7 @@ const Header = () => {
                         <div className="hidden lg:flex">
                             <ul className="menu menu-horizontal px-1 space-x-2 text-black font-bold ">
                                 <select className="select">
-                                    <option disabled selected>Pick your favorite Simpson</option>
+                                    <option disabled selected>Select Category</option>
                                     <option>Category-1</option>
                                     <option>Category-2</option>
                                     <option>Category-3</option>
@@ -74,7 +74,7 @@ const Header = () => {
                             </ul>
                         </div>
                         <select className="select lg:hidden">
-                            <option disabled selected>Pick your favorite Simpson</option>
+                            <option disabled selected>Select Category</option>
                             <option>Category-1</option>
                             <option>Category-2</option>
                             <option>Category-3</option>
